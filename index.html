@@ -2,7 +2,8 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta name="theme-color" content="#1a2431">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -379,8 +380,9 @@
     display:flex;
     background: rgba(27,36,48,0.92);
     backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
     border-top: 1px solid var(--line);
-    padding: 6px 2px calc(8px + env(safe-area-inset-bottom));
+    padding: 6px 4px calc(8px + env(safe-area-inset-bottom));
     z-index: 20;
   }
   nav.bottom button{
@@ -393,13 +395,13 @@
     align-items:center;
     justify-content:center;
     gap:3px;
-    padding: 6px 2px;
-    min-height:50px;
+    padding: 8px 2px;
+    min-height:52px;
     font-family:inherit;
-    font-size: 9.5px;
+    font-size: 10px;
     font-weight:600;
-    letter-spacing: 0.1px;
-    border-radius: 10px;
+    letter-spacing: 0.2px;
+    border-radius: 12px;
     transition: color .15s ease, background .15s ease;
   }
   nav.bottom button .navicon{ font-size:18px; line-height:1; }
